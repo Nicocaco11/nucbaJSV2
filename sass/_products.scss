@@ -1,0 +1,60 @@
+@import "var";
+
+#products{
+    width: 100%;
+    padding-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Cabin', sans-serif;
+    gap: 30px;
+    color: $primary-color;
+
+    img{
+        max-width: 250px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+}
+
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.products__content{
+    max-height: 500px;
+    height: 500px;
+    border: solid red;
+    padding: 30px;
+    background-color: #ffffff61;
+
+    h2{
+        max-width: 250px;
+        min-width: 200px;
+    }
+}
+
+.products__cart{
+    padding: 10px 25px;
+    border: solid red;
+    cursor: pointer;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.products__price{
+    font-size: 25px;
+}
+
+.products__cart:hover{
+    background-color: red;
+    border: solid red;
+}
+

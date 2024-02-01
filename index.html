@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Vision Project - Mejores Precios!</title>
+</head>
+<body>
+    <nav id="nav">
+            <div id="nav__menu">
+                <a href="#"><img src="src/visionlogo.png" alt="logo"></a>   
+            <li class="nav__content">
+                <ul><a href="#" class="nav__button" id="inicioBtn">Inicio</a></ul>
+                <ul><a href="#about" class="nav__button" id="nosotrosBtn">Nósotros</a></ul>
+                <ul><a href="#" class="nav__button" id="categoriasBtn">Categorías</a></ul>
+                <ul><a href="#" class="nav__button">Ingresar</a></ul>
+                <ul><a href="#" class="nav__button">Registrarse</a></ul>
+                <ul> <a href="#" class="nav__button"><i class="bx bxs-cart" id="nav__cart"></i></a></ul>
+            </li>
+            <div class="nav__content--disabled">
+                <i class='bx bx-menu nav__button' id="nav__responsive"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="products"></section>
+    <section id="hero"></section>
+    <section id="cart"></section>
+
+
+    <section id="about">
+        <div class="about__content">
+            <h1>¿QUIÈNES SOMOS?</h1>
+            <p>Somos los vendedores mas grande toda la Argentina.
+                Nos encargamos de proporcionar los mejores productos
+                de computaciòn en el paìs.
+            </p>
+        </div>
+    </section>
+
+    <section id="form">
+        <div class="form__content">
+            <h2>CONTÁCTANOS</h2>
+            <form id="form__contact">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre">
+                <span id="nombreError" class="error"></span>
+
+                <label for="correo">Correo:</label>
+                <input type="text" name="correo" id="correo" placeholder="Ingrese correo">
+                <span id="correoError" class="error"></span>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea name="descripcion" id="descripcion" placeholder="Ingrese mensaje"></textarea>
+                <span id="descripcionError" class="error"></span>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+            <p>© Todos los derechos reservados a Vision Project</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script type="module" src="js/render.js"></script>
+</body>
+</html>

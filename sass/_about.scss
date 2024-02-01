@@ -1,0 +1,16 @@
+@import "var";
+
+#about{
+    margin-top: 200px;
+    margin-bottom: 300px;
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    font-family: 'Cabin', sans-serif;
+    color: $primary-color;
+}
+
+.about__content{
+    font-size: 30px;
+    max-width: 50%;
+}
